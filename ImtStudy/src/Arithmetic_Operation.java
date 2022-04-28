@@ -46,5 +46,97 @@ public interface Arithmetic_Operation
         System.out.println(res);
     }
 
+    public static void Aithmetic_Operation(int[] arry, String str, int cnt) {
+        int res = 0;
+        int now = 0;
+        int i = 0;
+        switch (str) {
+            case "+":
+                while (i < cnt) {
+
+                    res += arry[i];
+                    now = arry[i];
+                    if (i == cnt - 1) {
+
+                        System.out.printf(now + " = " + res);
+
+                    } else {
+
+                        System.out.printf(now + " + ");
+
+                    }
+                    i++;
+
+                }
+                break;
+
+            case "-":
+
+                while (i < cnt) {
+
+                    res -= arry[i];
+                    now = arry[i];
+                    if (i == cnt - 1) {
+
+                        System.out.printf(now + " = " + res);
+
+                    } else {
+
+                        System.out.printf(now + " - ");
+
+                    }
+                    i++;
+
+                }
+                break;
+
+
+            case "/":
+
+                while (i < cnt) {
+
+                    res /= arry[i];
+                    now = arry[i];
+                    if (i == cnt - 1) {
+
+                        System.out.printf(now + " = " + res);
+
+                    } else {
+
+                        System.out.printf(now + " / ");
+
+                    }
+                    i++;
+
+                }
+                break;
+
+            case "*":
+
+                while (i < cnt) {
+
+                    res *= arry[i];
+                    now = arry[i];
+                    if (i == cnt - 1) {
+
+                        System.out.printf(now + " = " + res);
+
+                    } else {
+
+                        System.out.printf(now + " * ");
+
+                    }
+                    i++;
+
+                }
+                break;
+
+            default:
+
+                System.out.println("잘못된 입력입니다.");
+                break;
+        }
+    }
+
 }
 
