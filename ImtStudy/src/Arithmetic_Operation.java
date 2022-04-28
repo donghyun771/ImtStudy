@@ -9,31 +9,41 @@ public interface Arithmetic_Operation
 
     }
 
-    public static int Aithmetic_Operation(int num1, int num2, String str1) {
-        if (str1.equals("+")) {
+    public static void Aithmetic_Operation(int num1, int num2, String str1) {
+        int res = 0;
+        switch (str1) {
+            case "+" :
 
-            int res = num1 + num2;
-            return res;
+                res = num1 + num2;
+                break;
+//                return res;
 
-        } else if (str1.equals("-")) {
+            case "-" :
 
-            int res = num1 - num2;
-            return res;
+                res = num1 - num2;
+                break;
+//                return res;
 
-        } else if (str1.equals("*")) {
+            case "/" :
 
-            int res = num1 * num2;
-            return res;
+                res = num1 / num2;
+                break;
+//                return res;
 
-        } else if (str1.equals("/")) {
+            case "*" :
 
-            int res = num1 / num2;
-            return res;
+                res = num1 * num2;
+                break;
+//                return res;
 
-        }else {
-            System.out.println("잘못된 입력입니다.");
+            default:
+
+                System.out.println("잘못된 입력입니다.");
+                break;
+
         }
-        return 0;
+
+        System.out.println(res);
     }
 
 }
