@@ -1,16 +1,26 @@
 import java.util.Scanner;
 
-public class First {
+public class First implements Arithmetic_Operation {
+    int num1;
+    int num2;
+    @Override
+    public void arit_oper() {
+        System.out.println(num1 + " + " +num2 + " = " + (num1 + num2));
+        System.out.println(num1 + " - " +num2 + " = " + (num1 - num2));
+        System.out.println(num1 + " / " +num2 + " = " + (num1 / num2));
+        System.out.println(num1 + " * " +num2 + " = " + (num1 * num2));
+    }
+
 
     public void first() {
         Scanner sc = new Scanner(System.in);
 
         try {
 
-            int num1 = sc.nextInt();
-            int num2 = sc.nextInt();
+            num1 = sc.nextInt();
+            num2 = sc.nextInt();
 
-            Arithmetic_Operation.Aithmetic_Operation(num1, num2);
+            arit_oper();
 
         } catch (Exception e){
 
