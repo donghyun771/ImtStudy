@@ -1,54 +1,47 @@
 import java.util.Scanner;
 
-public class Second implements Arithmetic_Operation {
-    String str;
-    int num1;
-    int num2;
-    @Override
-    public void arit_oper() {
-        int res = 0;
-        switch (str) {
-            case "+" :
-
-                System.out.println(num1 + num2);
-                break;
-
-
-            case "-" :
-
-                System.out.println(num1 - num2);
-                break;
-
-            case "/" :
-
-                System.out.println(num1 / num2);
-                break;
-
-            case "*" :
-
-                System.out.println(num1 * num2);
-                break;
-
-            default:
-
-                System.out.println("잘못된 입력입니다.");
-                break;
-
-        }
-    }
-
+public class Second {
 
     public void second() {
 
         Scanner sc = new Scanner(System.in);
+        String str;
+        int num1 = 0;
+        int num2 = 0;
+        int[] arry = new int[2];
 
         try {
 
             str = sc.next();
-            num1 = sc.nextInt();
-            num2 = sc.nextInt();
+            arry[0] = sc.nextInt();
+            arry[1] = sc.nextInt();
 
-            arit_oper();
+            switch (str) {
+                case "+":
+
+                    System.out.println(arry[0] + " + " + arry[1] + " = " + Arithmetic_Operation.plus(arry));
+                    break;
+
+                case "-":
+
+                    System.out.println(arry[0] + " - " + arry[1] + " = " + Arithmetic_Operation.minus(arry));
+                    break;
+
+                case "/":
+
+                    System.out.println(arry[0] + " / " + arry[1] + " = " + (int)Arithmetic_Operation.division(arry));
+                    break;
+
+                case "*":
+
+                    System.out.println(arry[0] + " * " + arry[1] + " = " + Arithmetic_Operation.multiply(arry));
+                    break;
+
+                default:
+
+                    System.out.println("연산자가 잘못되었습니다.");
+                    break;
+            }
 
         } catch (Exception e){
 
