@@ -8,6 +8,7 @@ public class Main {
         Fourth fourth = new Fourth();
         Fifth fifth = new Fifth();
 
+        Scanner sc = new Scanner(System.in);
 
 //        first.first();
 //        second.second();

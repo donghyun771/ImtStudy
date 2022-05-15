@@ -3,7 +3,7 @@ import java.util.regex.Pattern;
 
 public class Fifth{
     public void fifth() {
-
+        Arithmetic_Operation AritOper = new Arithmetic_Operation();
         Scanner sc = new Scanner(System.in);
         String str;
         int[] arry;
@@ -15,7 +15,9 @@ public class Fifth{
                 System.out.println("Input");
                 str = sc.next();
                 if (str.equals("n")) {
+
                     break;
+
                 }
                 cnt = sc.nextInt();
                 int i = 0;
@@ -30,12 +32,14 @@ public class Fifth{
 
                 }
 
+
+                System.out.println("Output");
                 if (Pattern.matches("[+]", str)) {
                     int res = 0;
                     int now;
                     int j = 0;
 
-                    res = Arithmetic_Operation.plus(arry);
+                    res = AritOper.plus(arry);
 
                     while (j < cnt) {
 
@@ -58,7 +62,7 @@ public class Fifth{
                     int now;
                     int j = 0;
 
-                    res = Arithmetic_Operation.minus(arry);
+                    res = AritOper.minus(arry);
 
                     while (j < cnt) {
 
@@ -81,7 +85,7 @@ public class Fifth{
                     int now;
                     int j = 0;
 
-                    res = Arithmetic_Operation.division(arry);
+                    res = AritOper.division(arry);
 
                     while (j < cnt) {
 
@@ -104,7 +108,7 @@ public class Fifth{
                     int now;
                     int j = 0;
 
-                    res = Arithmetic_Operation.multiply(arry);
+                    res = AritOper.multiply(arry);
 
                     while (j < cnt) {
 

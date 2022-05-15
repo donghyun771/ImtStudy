@@ -4,6 +4,7 @@ public class Second {
 
     public void second() {
 
+        Arithmetic_Operation AritOper = new Arithmetic_Operation();
         Scanner sc = new Scanner(System.in);
         String str;
         int num1 = 0;
@@ -19,22 +20,22 @@ public class Second {
             switch (str) {
                 case "+":
 
-                    System.out.println(arry[0] + " + " + arry[1] + " = " + Arithmetic_Operation.plus(arry));
+                    System.out.println(arry[0] + " + " + arry[1] + " = " + AritOper.plus(arry));
                     break;
 
                 case "-":
 
-                    System.out.println(arry[0] + " - " + arry[1] + " = " + Arithmetic_Operation.minus(arry));
+                    System.out.println(arry[0] + " - " + arry[1] + " = " + AritOper.minus(arry));
                     break;
 
                 case "/":
 
-                    System.out.println(arry[0] + " / " + arry[1] + " = " + (int)Arithmetic_Operation.division(arry));
+                    System.out.println(arry[0] + " / " + arry[1] + " = " + (int) AritOper.division(arry));
                     break;
 
                 case "*":
 
-                    System.out.println(arry[0] + " * " + arry[1] + " = " + Arithmetic_Operation.multiply(arry));
+                    System.out.println(arry[0] + " * " + arry[1] + " = " + AritOper.multiply(arry));
                     break;
 
                 default:

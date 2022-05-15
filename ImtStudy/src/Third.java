@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 public class Third{
 
     public void third() {
-
+        Arithmetic_Operation AritOper = new Arithmetic_Operation();
         Scanner sc = new Scanner(System.in);
         String str;
         int[] arry;
@@ -29,7 +29,7 @@ public class Third{
                 int now;
                 int j = 0;
 
-                res = Arithmetic_Operation.plus(arry);
+                res = AritOper.plus(arry);
 
                 while (j < cnt) {
 
@@ -52,7 +52,7 @@ public class Third{
                 int now;
                 int j = 0;
 
-                res = Arithmetic_Operation.minus(arry);
+                res = AritOper.minus(arry);
 
                 while (j < cnt) {
 
@@ -75,7 +75,7 @@ public class Third{
                 int now;
                 int j = 0;
 
-                res = (int)Arithmetic_Operation.division(arry);
+                res = (int) AritOper.division(arry);
 
                 while (j < cnt) {
 
@@ -98,7 +98,7 @@ public class Third{
                 int now;
                 int j = 0;
 
-                res = Arithmetic_Operation.multiply(arry);
+                res = AritOper.multiply(arry);
 
                 while (j < cnt) {
 
